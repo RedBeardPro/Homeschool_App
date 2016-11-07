@@ -37,6 +37,8 @@ namespace Homeschool_App
                 int loopsnow = 0;
 
                 int Answer = Problem1 + Problem2;
+                Int32 [] badAnswer = new Int32[4] { 0, 0, 0, 0 };
+                Int32 nowBad = Answer + rnd.Next(0, 6);
 
                 foreach (RadioButton r in Choices.Controls)
                 {
@@ -44,23 +46,32 @@ namespace Homeschool_App
                     if (loopsnow == 4) { loopsnow = 0; }
 
                     if (loopsnow == loopsset)
-                    { r.Text = Answer.ToString(); }
+                    {
+                        r.Text = Answer.ToString();
+                        badAnswer[loopsnow] = Convert.ToInt32(r.Text);
+                    }
                     else
-                    { r.Text = (Answer + rnd.Next(0, 6)).ToString(); }   
+                    {
+                        //MessageBox.Show(Answer.ToString() + Environment.NewLine + 
+                        //    badAnswer[0].ToString() + Environment.NewLine +
+                        //    badAnswer[1].ToString() + Environment.NewLine + 
+                        //    badAnswer[2].ToString() + Environment.NewLine + 
+                        //    badAnswer[3].ToString());
+
+                        while ( nowBad == badAnswer[0] || nowBad == badAnswer[1] || nowBad == badAnswer[2] || nowBad == badAnswer[3])
+                        {
+                            nowBad = Answer + rnd.Next(0, 6);
+                        }
+
+                        //MessageBox.Show(Answer.ToString() + Environment.NewLine +
+                        //    badAnswer[0].ToString() + Environment.NewLine +
+                        //    badAnswer[1].ToString() + Environment.NewLine +
+                        //    badAnswer[2].ToString() + Environment.NewLine +
+                        //    badAnswer[3].ToString());
+                        badAnswer[loopsnow] = nowBad;
+                        r.Text = nowBad.ToString();
+                    }   
                 }
-
-                foreach (RadioButton r in Choices.Controls)
-                {
-                    loopsnow = loopsnow + 1;
-                    if (loopsnow == 4) { loopsnow = 0; }
-
-                    if (loopsnow == loopsset)
-                    { r.Text = Answer.ToString(); }
-                    else
-                    { r.Text = (Answer + rnd.Next(0, 6)).ToString(); }
-
-                }
-
             }
             else
             {
