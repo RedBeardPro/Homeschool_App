@@ -58,40 +58,40 @@
             // Problem_Num1
             // 
             this.Problem_Num1.AutoSize = true;
-            this.Problem_Num1.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Problem_Num1.Location = new System.Drawing.Point(108, 30);
+            this.Problem_Num1.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Problem_Num1.Location = new System.Drawing.Point(77, 42);
             this.Problem_Num1.Name = "Problem_Num1";
-            this.Problem_Num1.Size = new System.Drawing.Size(98, 108);
+            this.Problem_Num1.Size = new System.Drawing.Size(68, 73);
             this.Problem_Num1.TabIndex = 0;
             this.Problem_Num1.Text = "5";
             // 
             // Problem_Num2
             // 
             this.Problem_Num2.AutoSize = true;
-            this.Problem_Num2.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Problem_Num2.Location = new System.Drawing.Point(108, 138);
+            this.Problem_Num2.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Problem_Num2.Location = new System.Drawing.Point(77, 119);
             this.Problem_Num2.Name = "Problem_Num2";
-            this.Problem_Num2.Size = new System.Drawing.Size(98, 108);
+            this.Problem_Num2.Size = new System.Drawing.Size(68, 73);
             this.Problem_Num2.TabIndex = 1;
             this.Problem_Num2.Text = "5";
             // 
             // Problem_Operator
             // 
             this.Problem_Operator.AutoSize = true;
-            this.Problem_Operator.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Problem_Operator.Location = new System.Drawing.Point(11, 138);
+            this.Problem_Operator.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Problem_Operator.Location = new System.Drawing.Point(15, 119);
             this.Problem_Operator.Name = "Problem_Operator";
-            this.Problem_Operator.Size = new System.Drawing.Size(101, 108);
+            this.Problem_Operator.Size = new System.Drawing.Size(69, 73);
             this.Problem_Operator.TabIndex = 2;
             this.Problem_Operator.Text = "+";
             // 
             // Choices_Choice1
             // 
             this.Choices_Choice1.AutoSize = true;
-            this.Choices_Choice1.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Choices_Choice1.Location = new System.Drawing.Point(27, 27);
+            this.Choices_Choice1.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Choices_Choice1.Location = new System.Drawing.Point(18, 40);
             this.Choices_Choice1.Name = "Choices_Choice1";
-            this.Choices_Choice1.Size = new System.Drawing.Size(169, 112);
+            this.Choices_Choice1.Size = new System.Drawing.Size(122, 77);
             this.Choices_Choice1.TabIndex = 3;
             this.Choices_Choice1.TabStop = true;
             this.Choices_Choice1.Text = "10";
@@ -100,10 +100,10 @@
             // Choices_Choice2
             // 
             this.Choices_Choice2.AutoSize = true;
-            this.Choices_Choice2.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Choices_Choice2.Location = new System.Drawing.Point(202, 27);
+            this.Choices_Choice2.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Choices_Choice2.Location = new System.Drawing.Point(202, 40);
             this.Choices_Choice2.Name = "Choices_Choice2";
-            this.Choices_Choice2.Size = new System.Drawing.Size(169, 112);
+            this.Choices_Choice2.Size = new System.Drawing.Size(122, 77);
             this.Choices_Choice2.TabIndex = 4;
             this.Choices_Choice2.TabStop = true;
             this.Choices_Choice2.Text = "10";
@@ -112,10 +112,10 @@
             // Choices_Choice4
             // 
             this.Choices_Choice4.AutoSize = true;
-            this.Choices_Choice4.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Choices_Choice4.Location = new System.Drawing.Point(202, 135);
+            this.Choices_Choice4.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Choices_Choice4.Location = new System.Drawing.Point(202, 117);
             this.Choices_Choice4.Name = "Choices_Choice4";
-            this.Choices_Choice4.Size = new System.Drawing.Size(169, 112);
+            this.Choices_Choice4.Size = new System.Drawing.Size(122, 77);
             this.Choices_Choice4.TabIndex = 6;
             this.Choices_Choice4.TabStop = true;
             this.Choices_Choice4.Text = "10";
@@ -124,10 +124,10 @@
             // Choices_Choice3
             // 
             this.Choices_Choice3.AutoSize = true;
-            this.Choices_Choice3.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Choices_Choice3.Location = new System.Drawing.Point(27, 135);
+            this.Choices_Choice3.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Choices_Choice3.Location = new System.Drawing.Point(18, 117);
             this.Choices_Choice3.Name = "Choices_Choice3";
-            this.Choices_Choice3.Size = new System.Drawing.Size(169, 112);
+            this.Choices_Choice3.Size = new System.Drawing.Size(122, 77);
             this.Choices_Choice3.TabIndex = 5;
             this.Choices_Choice3.TabStop = true;
             this.Choices_Choice3.Text = "10";
@@ -167,10 +167,10 @@
             // Answer_Number
             // 
             this.Answer_Number.AutoSize = true;
-            this.Answer_Number.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Answer_Number.Location = new System.Drawing.Point(109, 13);
+            this.Answer_Number.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Answer_Number.Location = new System.Drawing.Point(11, 21);
             this.Answer_Number.Name = "Answer_Number";
-            this.Answer_Number.Size = new System.Drawing.Size(98, 108);
+            this.Answer_Number.Size = new System.Drawing.Size(68, 73);
             this.Answer_Number.TabIndex = 3;
             this.Answer_Number.Text = "5";
             this.Answer_Number.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -195,7 +195,7 @@
             // 
             // newProblem
             // 
-            this.newProblem.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.newProblem.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.newProblem.Location = new System.Drawing.Point(680, 142);
             this.newProblem.Name = "newProblem";
             this.newProblem.Size = new System.Drawing.Size(334, 156);
@@ -206,7 +206,7 @@
             // 
             // submitAnswer
             // 
-            this.submitAnswer.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.submitAnswer.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.submitAnswer.Location = new System.Drawing.Point(680, 310);
             this.submitAnswer.Name = "submitAnswer";
             this.submitAnswer.Size = new System.Drawing.Size(334, 155);

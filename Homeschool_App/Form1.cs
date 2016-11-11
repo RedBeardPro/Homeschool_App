@@ -19,6 +19,11 @@ namespace Homeschool_App
 
         private void newProblem_Click(object sender, EventArgs e)
         {
+            foreach (RadioButton r in Choices.Controls)
+            {
+                r.Checked = false;
+            }
+
             if (Convert.ToInt16(numericUpDown1.Value) < Convert.ToInt16(numericUpDown2.Value + 1))
             {
                 Int16 LowVal = Convert.ToInt16(numericUpDown1.Value);
@@ -33,45 +38,40 @@ namespace Homeschool_App
 
                 Answer_Number.Text = "?";
 
+                int Answer = Problem1 + Problem2;
+                Int32 [] badAnswer = new Int32[4] { 0, 0, 0, 0 };
+
+                badAnswer[0] = Answer + rnd.Next(1, 6) - rnd.Next(1, 6);
+                badAnswer[1] = Answer + rnd.Next(1, 6) - rnd.Next(1, 6);
+                badAnswer[2] = Answer + rnd.Next(1, 6) - rnd.Next(1, 6);
+                badAnswer[3] = Answer + rnd.Next(1, 6) - rnd.Next(1, 6);
+
+                while (badAnswer[0] == badAnswer[1] || badAnswer[0] == badAnswer[2] || badAnswer[0] == badAnswer[3] || badAnswer[0] == Answer)
+                { badAnswer[0] = Answer + rnd.Next(1, 6) - rnd.Next(1, 6); }
+                while (badAnswer[1] == badAnswer[0] || badAnswer[1] == badAnswer[2] || badAnswer[1] == badAnswer[3] || badAnswer[1] == Answer)
+                { badAnswer[1] = Answer + rnd.Next(1, 6) - rnd.Next(1, 6); }
+                while (badAnswer[2] == badAnswer[1] || badAnswer[2] == badAnswer[0] || badAnswer[2] == badAnswer[3] || badAnswer[2] == Answer)
+                { badAnswer[2] = Answer + rnd.Next(1, 6) - rnd.Next(1, 6); }
+                while (badAnswer[3] == badAnswer[1] || badAnswer[3] == badAnswer[2] || badAnswer[3] == badAnswer[0] || badAnswer[3] == Answer)
+                { badAnswer[3] = Answer + rnd.Next(1, 6) - rnd.Next(1, 6); }
+
                 int loopsset = rnd.Next(0, 4);
                 int loopsnow = 0;
 
-                int Answer = Problem1 + Problem2;
-                Int32 [] badAnswer = new Int32[4] { 0, 0, 0, 0 };
-                Int32 nowBad = Answer + rnd.Next(0, 6);
-
-                foreach (RadioButton r in Choices.Controls)
+                foreach (Int32 bad in badAnswer)
                 {
-                    loopsnow = loopsnow + 1;
-                    if (loopsnow == 4) { loopsnow = 0; }
-
                     if (loopsnow == loopsset)
                     {
-                        r.Text = Answer.ToString();
-                        badAnswer[loopsnow] = Convert.ToInt32(r.Text);
+                     badAnswer[loopsnow] = Answer;
                     }
-                    else
-                    {
-                        //MessageBox.Show(Answer.ToString() + Environment.NewLine + 
-                        //    badAnswer[0].ToString() + Environment.NewLine +
-                        //    badAnswer[1].ToString() + Environment.NewLine + 
-                        //    badAnswer[2].ToString() + Environment.NewLine + 
-                        //    badAnswer[3].ToString());
-
-                        while ( nowBad == badAnswer[0] || nowBad == badAnswer[1] || nowBad == badAnswer[2] || nowBad == badAnswer[3])
-                        {
-                            nowBad = Answer + rnd.Next(0, 6);
-                        }
-
-                        //MessageBox.Show(Answer.ToString() + Environment.NewLine +
-                        //    badAnswer[0].ToString() + Environment.NewLine +
-                        //    badAnswer[1].ToString() + Environment.NewLine +
-                        //    badAnswer[2].ToString() + Environment.NewLine +
-                        //    badAnswer[3].ToString());
-                        badAnswer[loopsnow] = nowBad;
-                        r.Text = nowBad.ToString();
-                    }   
+                    loopsnow = loopsnow + 1;
                 }
+
+                Choices_Choice1.Text = badAnswer[0].ToString();
+                Choices_Choice2.Text = badAnswer[1].ToString();
+                Choices_Choice3.Text = badAnswer[2].ToString();
+                Choices_Choice4.Text = badAnswer[3].ToString();
+
             }
             else
             {
